@@ -4,8 +4,8 @@ from django.http import HttpResponse
 def home(request):
     return render(request, 'gen/home.html',{'password':'qwertyuiop'})
 
-def eggs(request):
-    return HttpResponse('<h1>Eggs are so tasty</h1>')
+def password(request):
+    return render(request,'gen/password.html')
 
 def about(request):
     return render(request, 'gen/about.html')

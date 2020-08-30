@@ -19,7 +19,8 @@ from gen import views
 
 urlpatterns = [
     path('',views.home),
-    path('eggs',views.eggs),
+    # path('password',views.password),
+    path('generatedpassword/',views.password, name='password'),
     path('about',views.about),
     # path('hithere/', admin.site.urls),
 ]
